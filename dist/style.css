@@ -372,18 +372,14 @@ a:active {
     padding-inline: 1.25rem;
   }
 }
-.benefits__card h4 {
+.benefits__card h2 {
+  font-size: 1.125rem;
   line-height: 1.3661;
   margin-bottom: 1.4375rem;
 }
 @media (max-width: 56.25em) {
-  .benefits__card h4 {
+  .benefits__card h2 {
     margin-bottom: 0;
-  }
-}
-@media (max-width: 43.75em) {
-  .benefits__card h4 {
-    font-size: 1.125rem;
   }
 }
 .benefits__card p {

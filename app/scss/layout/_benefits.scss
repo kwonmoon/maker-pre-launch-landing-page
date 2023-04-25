@@ -88,16 +88,13 @@
          }
       }
 
-      & h4 {
+      & h2 {
+         font-size: u.rem(18);
          line-height: 1.3661;
          margin-bottom: u.rem(23);
 
          @include u.breakpoint-down(medium) {
             margin-bottom: 0;
-         }
-
-         @include u.breakpoint-down(small) {
-            font-size: u.rem(18);
          }
       }
 
