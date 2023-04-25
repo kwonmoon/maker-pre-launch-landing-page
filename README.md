@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kwonmoon/github-user-search-app)
-- Live Site URL: [Add live site URL here](https://splendid-taiyaki-865a48.netlify.app/)
+- Solution URL: [Add solution URL here](https://github.com/kwonmoon/maker-pre-launch-landing-page)
+- Live Site URL: [Add live site URL here](https://app.netlify.com/sites/serene-crumble-4c6933)
 
 ## My process
 
