@@ -1,0 +1,42 @@
+@use "../util" as u;
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: 800;
+   margin-top: 0;   
+}
+
+h1 {
+   font-size: u.rem(48);
+   line-height: 1.1667;
+}
+
+h2 {
+   font-size: u.rem(40);
+   line-height: 1.375;
+}
+
+h3 {
+   font-size: u.rem(32);
+   line-height: 1.375;
+}
+
+h4 {
+   font-size: u.rem(18);
+   line-height: 1.3889;
+}
+
+p {
+   font-size: u.rem(18);
+   font-weight: 500;
+   line-height: 1.6667;
+   margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+   text-decoration: none;
+}

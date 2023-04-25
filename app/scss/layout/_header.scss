@@ -1,0 +1,28 @@
+@use "../util" as u;
+
+.header {
+   margin: u.rem(81) auto u.rem(114);
+   
+   @include u.breakpoint-down(medium) {
+      margin-top: u.rem(48);
+      margin-bottom: u.rem(77);
+   }
+
+   @include u.breakpoint-down(small) {
+      margin-top: u.rem(40);
+      margin-bottom: u.rem(65.5);   
+   }
+
+   &__logo {
+      margin-left: u.rem(165);
+
+      @include u.breakpoint-down(medium) {
+         margin-left: u.rem(39);
+      }
+   
+      @include u.breakpoint-down(small) {
+         margin-inline: auto;
+      }
+   }
+}
+

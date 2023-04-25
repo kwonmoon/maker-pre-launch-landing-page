@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./dist/style.css">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+   <title>Frontend Mentor | Maker pre-launch landing page</title>
+</head>
+<body>
+   <header class="header wrapper">
+      <img class="header__logo" src="./assets/logo.svg" alt="company logo">
+   </header>
+   <main>
+      <section class="hero wrapper">
+         <div class="hero__mobile">
+            <img src="./assets/illustration-hero-mobile.png" alt="mobile hero image">
+         </div>
+         <div class="hero__left">
+            <img src="./assets/illustration-hero-left.svg" alt="left hero image">
+         </div>
+         <div class="hero__center flex">
+            <h1 class="hero__center__title">Get paid for the work you <span>love</span> to do.</h1>
+            <p class="hero__center__desc">The 9-5 grind is so last century. We believe in living life on your 
+               own terms. Whether you’re looking to escape the rat race or set up 
+               a side hustle, we’ve got you covered.
+            </p>
+            <img src="./assets/icon-scroll.svg" alt="scroll icon" class="hero__center__icon">
+            <img src="./assets/bg-hero-squiggle.svg" alt="hero section background image" class="hero__center__bg">
+         </div>
+         <div class="hero__right">
+            <img src="./assets/illustration-hero-right.svg" alt="right hero image">
+         </div>
+      </section>
+      <section class="benefits grid wrapper">
+         <div class="benefits__card">
+            <div class="benefits__card__image">
+               <img src="./assets/illustration-passions.svg" alt="image for passion">
+            </div>
+            <div class="benefits__card__text">
+               <h4>Indulge your passions</h4>
+               <p>
+                  Your passions shouldn't be just for the weekend. Earn a living doing what you love.
+               </p>
+            </div>
+         </div>
+         <div class="benefits__card">
+            <div class="benefits__card__image">
+               <img src="./assets/illustration-financial-freedom.svg" alt="image for financial freedom">
+            </div>
+            <div class="benefits__card__text">
+               <h4>Gain financial freedom</h4>
+               <p>
+                  Start making money work for you. There’s nothing quite like earning while you sleep.
+               </p>
+            </div>
+         </div>
+         <div class="benefits__card">
+            <div class="benefits__card__image">
+               <img src="./assets/illustration-lifestyle.svg" alt="image for lifestyle">
+            </div>
+            <div class="benefits__card__text">
+               <h4>Choose your lifestyle</h4>
+               <p>
+                  Own your daily schedule. Fancy a lie-&nbsp;in? Go for it! Take charge of your week.
+               </p>
+            </div>
+         </div>
+         <div class="benefits__card">
+            <div class="benefits__card__image">
+               <img src="./assets/illustration-work-anywhere.svg" alt="image for work anywhere">
+            </div>
+            <div class="benefits__card__text">
+               <h4>Work from anywhere</h4>
+               <p>
+                  Selling online means not being pinned down. Want to work AND travel? Go for it!
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="pricing wrapper">
+         <h2 class="pricing__title">Our pricing plans</h2>
+         <p class="pricing__desc">
+            We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.
+         </p>
+         <div class="pricing__plans flex">
+            <div class="pricing__plans__free">
+               <h3>Dip your toe</h3>
+               <p>
+                  Just getting started? No problem at all! Our free plan will take you a long way.
+               </p>
+               <h4>Free</h4>
+               <ul>
+                  <li>Unlimited products</li>
+                  <li>Basic analytics</li>
+                  <li>Limited marketplace exposure</li>
+                  <li>10% fee per transaction</li>
+               </ul>
+               <img src="./assets/icon-free.svg" alt="icon for free membership">
+            </div>
+            <div class="pricing__plans__paid">
+               <h3>Dive right in</h3>
+               <p>
+                  Ready for the big time? Our paid plan will help you take your business to the next level.
+               </p>
+               <div class="pricing__plans__paid__price flex">
+                  <h4>$25.00</h4>
+                  <span>/ month</span>
+               </div>
+               <ul>
+                  <li>Custom domain</li>
+                  <li>Advanced analytics and reports</li>
+                  <li>High marketplace visibility</li>
+                  <li>5% fee per transaction</li>                
+               </ul>
+               <img src="./assets/icon-paid.svg" alt="icon for paid membership">
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <img
+         class="footer__bg"
+         src="./assets/bg-footer-squiggle.svg"
+         alt=""
+         width="1665"
+         height="228"
+      >
+      <h2 class="footer__title">
+         Get notified when <br class="footer__title__br">we launch
+      </h2>
+      <div class="footer__email">
+         <input
+            type="email"
+            class="footer__email__address"
+            name="email"
+            id="email"
+            placeholder="Email address"
+         >
+         <button class="footer__email__button">Get notified</button>
+         <span class="footer__email__error-msg-1">Oops! Please add your email</span>
+         <span class="footer__email__error-msg-2">Oops! That doesn't look like an email address</span>
+      </div>
+   </footer>
+
+   <script src="./app/js/app.js"></script>
+</body>
+</html>

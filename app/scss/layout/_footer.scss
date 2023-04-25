@@ -1,0 +1,120 @@
+@use "../util" as u;
+
+.footer {
+   margin: 0 auto;
+   padding-bottom: u.rem(159);
+   position: relative;
+   
+   @include u.breakpoint-down(medium) {
+      padding-bottom: u.rem(119);
+   }
+   
+   @include u.breakpoint-down(small) {
+      padding-bottom: u.rem(164);
+   }
+   
+   &__bg {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+   }
+      
+   &__title {
+      font-size: u.rem(32);
+      padding-top: u.rem(52);
+      text-align: center;
+      margin-bottom: u.rem(42);
+      
+      @include u.breakpoint-down(medium) {
+         font-size: u.rem(24);
+         padding-top: u.rem(16);
+         margin-bottom: u.rem(29);
+      }
+
+      @include u.breakpoint-down(small) {
+         padding-top: 0 u.rem(32);
+      }
+
+      &__br {
+         display: none;
+
+         @include u.breakpoint-down(small) {
+            display: block;
+         }
+      }
+   }
+
+   &__email {
+      text-align: center;
+
+      &__address {
+         background-color: hsl(var(--color-dark-blue));
+         color: hsl(var(--color-white));
+         width: u.rem(320);
+         font-size: u.rem(15);
+         font-weight: 800;
+         line-height: 1.6667;
+         padding: u.rem(12) u.rem(18);
+         margin: 0 u.rem(16) u.rem(4) 0;
+         border: 0;
+         border-radius: u.rem(24);
+
+         @include u.breakpoint-down(small) {
+            width: u.rem(327);
+            margin: 0 0 u.rem(24) 0;
+         }
+
+         &::placeholder {
+            opacity: 0.4;
+         }
+
+         &:active {
+            border: 2px solid hsl(var(--color-bright-cyan));
+         }
+      }
+
+      &__button {
+         background-color: hsl(var(--color-bright-cyan));
+         color: hsl(var(--color-midnight-blue));
+         padding: u.rem(12) u.rem(18);
+         border-radius: u.rem(24);
+
+         @include u.breakpoint-down(small) {
+            width: u.rem(327);
+         }
+
+         &:hover {
+            background-color: hsl(var(--color-midnight-blue));
+            color: hsl(var(--color-white));
+            border: 2px solid hsl(var(--color-bright-cyan));
+         }
+      }
+      
+      &__error-msg-1 {
+         font-size: u.rem(12);
+         line-height: 2.0833;
+         color: hsl(var(--color-razzmatazz));
+         margin-left: u.rem(-280);
+         display: none;
+
+         @include u.breakpoint-down(small) {
+            margin: u.rem(-70) 0 0 u.rem(-140);
+         }
+      }
+
+      &__error-msg-2 {
+         font-size: u.rem(12);
+         line-height: 2.0833;
+         color: hsl(var(--color-razzmatazz));
+         margin-left: u.rem(-180);
+         display: none;
+
+         @include u.breakpoint-down(small) {
+            margin: u.rem(-70) 0 0 u.rem(-40);
+         }
+      }
+   }
+}

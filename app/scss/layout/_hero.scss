@@ -1,0 +1,126 @@
+@use "../util" as u;
+
+.hero {
+   position: relative;
+   margin: 0 auto u.rem(202);
+   height: u.rem(459);
+   overflow-x: hidden;
+   
+   @include u.breakpoint-down(medium) {
+      height: u.rem(355);
+      margin-bottom: u.rem(110);
+   }
+   
+   @include u.breakpoint-down(small) {
+      height: u.rem(599.5);
+   }
+
+   &__center {
+      max-width: u.rem(544.31);
+      max-height: u.rem(377.98);
+      margin-top: u.rem(71);
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-inline: auto;
+      position: relative;
+      
+      @include u.breakpoint-down(medium) {
+         max-width: u.rem(386);
+         max-height: u.rem(268);
+         margin-top: u.rem(51);
+         font-size: u.rem(32);
+         line-height: 1.25;
+      }
+
+      @include u.breakpoint-down(small) {
+         margin-top: u.rem(47.5);
+      }
+
+      &__title {
+         margin-bottom: u.rem(24);
+         
+         @include u.breakpoint-down(medium) {
+            font-size: u.rem(32);
+            line-height: 1.25;
+            margin-bottom: u.rem(24);
+         }
+
+         @include u.breakpoint-down(small) {
+            margin: 0 u.rem(65) u.rem(23);
+         }
+
+         & span {
+            color: hsl(var(--color-bright-cyan));
+         }
+      }
+
+      &__desc {
+         margin-bottom: u.rem(64);
+         font-size: u.rem(15);
+         color: hsl(var(--color-blue-gray));
+         
+         @include u.breakpoint-down(medium) {
+            margin: 0 u.rem(-30) u.rem(32);
+         }
+
+         @include u.breakpoint-down(small) {
+            margin: 0 u.rem(20) u.rem(32);
+         }
+      }
+
+      &__bg {
+         position: absolute;
+         z-index: -1;
+
+         @include u.breakpoint-down(medium) {
+            max-width: u.rem(386);
+            max-height: u.rem(268);
+         }
+      }
+   }
+
+   &__left {
+      position: absolute;
+      left: u.rem(-53);
+
+      @include u.breakpoint-down(medium) {
+         max-width: u.rem(313.71);
+         max-height: u.rem(354.37);
+         top: u.rem(1.63);
+         left: u.rem(-169);
+      }
+
+      @include u.breakpoint-down(small) {
+         display: none;
+      }
+   }
+
+   &__right {
+      position: absolute;
+      top: u.rem(8);
+      right: u.rem(-60);
+      
+      @include u.breakpoint-down(medium) {
+         max-width: u.rem(317);
+         max-height: u.rem(356);
+         top: 0;
+         right: u.rem(-171);
+      }
+
+
+      @include u.breakpoint-down(small) {
+         display: none;
+      }
+   }
+
+   &__mobile {
+      display: none;
+
+      @include u.breakpoint-down(small) {
+         display: block;
+         width: u.rem(410);
+         height: u.rem(233);
+      }
+   }
+}
