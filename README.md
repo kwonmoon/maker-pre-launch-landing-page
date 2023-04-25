@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/kwonmoon/maker-pre-launch-landing-page)
-- Live Site URL: [Add live site URL here](https://app.netlify.com/sites/serene-crumble-4c6933)
+- Live Site URL: [Add live site URL here](https://serene-crumble-4c6933.netlify.app/)
 
 ## My process
 
